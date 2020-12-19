@@ -1,4 +1,3 @@
-DROP DATABASE grupo11;
 CREATE DATABASE grupo11;
 USE grupo11;
 
