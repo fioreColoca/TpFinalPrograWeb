@@ -12,9 +12,10 @@ class QrModel
         $this->database = $database;
     }
 
-    public function decodificarQrDesdeArchivo($archivo){
-        $qrcode= new \Zxing\QrReader($archivo);
-        $text= $qrcode->text();
+    public function decodificarQrDesdeArchivo($archivo)
+    {
+        $qrcode = new \Zxing\QrReader($archivo);
+        $text = $qrcode->text();
 
         return $text;
     }
@@ -22,9 +23,9 @@ class QrModel
     public function generarQr($idViaje)
     {
         $direccion = 'public/imgQr/';
-        $nombre = $idViaje . '.png';
-
-        QRcode::png("/proforma/verFormulario?idViaje=$idViaje", $direccion . $nombre, QR_ECLEVEL_H);
+        $nombreydir = $direccion . $idViaje . '.png';
+        $datos = "/proforma/verFormulario?idViaje=$idViaje";
+        QRcode::png($datos, $nombreydir, 'H', 10, 3);
     }
 
 }
