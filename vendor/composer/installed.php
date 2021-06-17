@@ -1,33 +1,32 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-develop',
-    'version' => 'dev-develop',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '13760795c7b5f162ce6d0f17bfecf717428ef7a2',
+        'name' => '__root__',
+        'dev' => true,
     ),
-    'reference' => '75da4883ffc4cc7b3ae7353f66d41add975c776d',
-    'name' => '__root__',
-  ),
-  'versions' => 
-  array (
-    '__root__' => 
-    array (
-      'pretty_version' => 'dev-develop',
-      'version' => 'dev-develop',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '75da4883ffc4cc7b3ae7353f66d41add975c776d',
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '13760795c7b5f162ce6d0f17bfecf717428ef7a2',
+            'dev_requirement' => false,
+        ),
+        'khanamiryan/qrcode-detector-decoder' => array(
+            'pretty_version' => '1.0.5.1',
+            'version' => '1.0.5.1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../khanamiryan/qrcode-detector-decoder',
+            'aliases' => array(),
+            'reference' => 'b96163d4f074970dfe67d4185e75e1f4541b30ca',
+            'dev_requirement' => false,
+        ),
     ),
-    'khanamiryan/qrcode-detector-decoder' => 
-    array (
-      'pretty_version' => '1.0.4',
-      'version' => '1.0.4.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '07fceefb79d895e858e52921afb9c1433d2f3d5e',
-    ),
-  ),
 );
